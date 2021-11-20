@@ -11,16 +11,16 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_fragmentMain_to_checkListFragment"
-            app:destination="@id/checkListFragment" />
+            android:id="@+id/action_fragmentMain_to_billListFragment"
+            app:destination="@id/billListFragment" />
     </fragment>
     <fragment
-        android:id="@+id/checkListFragment"
-        android:name="com.example.cofferwarden.checkListFragment"
-        android:label="fragment_check_list"
-        tools:layout="@layout/fragment_check_list" >
+        android:id="@+id/billListFragment"
+        android:name="com.example.cofferwarden.BillListFragment"
+        android:label="fragment_bill_list"
+        tools:layout="@layout/fragment_bill_list" >
         <action
-            android:id="@+id/action_checkListFragment_to_fragmentMain"
+            android:id="@+id/action_billListFragment_to_fragmentMain"
             app:destination="@id/fragmentMain" />
     </fragment>
 </navigation>

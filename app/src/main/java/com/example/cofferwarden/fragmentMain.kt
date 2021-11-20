@@ -45,7 +45,7 @@ class fragmentMain : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.ShowAllButton.setOnClickListener {
-            this.findNavController().navigate(R.id.action_fragmentMain_to_checkListFragment)
+            this.findNavController().navigate(R.id.action_fragmentMain_to_billListFragment)
         }
     }
 
