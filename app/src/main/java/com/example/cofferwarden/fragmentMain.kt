@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.cofferwarden.databinding.FragmentMainBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -42,8 +43,9 @@ class fragmentMain : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.ShowAllButton.setOnClickListener {
 
+        binding.ShowAllButton.setOnClickListener {
+            this.findNavController().navigate(R.id.action_fragmentMain_to_checkListFragment)
         }
     }
 
